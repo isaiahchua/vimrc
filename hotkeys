@@ -1,0 +1,26 @@
+# Add this file to your .vim folder and make it read only
+
+Hotkeys:
+
+SPACE - h - k                 : Show hotkeys
+SPACE - v                     : Open .vimrc file
+SPACE - g - d                 : Go to definition
+SPACE - g - r                 : Go to reference
+SPACE - t                     : Open terminal in a new window
+CTRL - \ CTRL - n             : Exit terminal insert mode
+SPACE - SPACE - p             : Format Prettier
+SPACE - SPACE - g             : Format GoFmt
+SPACE - SPACE - b             : Format Black
+SPACE - SPACE - u             : Toggle UndoTree
+SPACE - SPACE - f             : Find Files (FZF & RIPGREP)
+Control - p                   : Git files (git ls-files)
+CTRL - -                      : Comment or Uncomment line
+<F6>                          : Toggle NERDTree
+SPACE - 1                     : Go to next buffer in list 
+SPACE - 2                     : Go to prev buffer in list 
+SPACE - h                     : Move cursor to window on the left
+SPACE - j                     : Move cursor to window on the down
+SPACE - k                     : Move cursor to window on the up 
+SPACE - l                     : Move cursor to window on the right
+SPACE - =                     : Expand window
+SPACE - -                     : Shrink window
