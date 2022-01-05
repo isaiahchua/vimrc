@@ -86,7 +86,7 @@ call plug#end()
 " Set mapleader to space
 let mapleader = " "
 " Maps
-nmap <leader>hk :vsplit ~/.vim/hotkeys<CR>
+nmap <leader>0 :vsplit ~/.vim/hotkeys<CR>
 nnoremap <Leader>v :e $MYVIMRC<CR>
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
@@ -98,10 +98,11 @@ nmap <leader><leader>b :Black<CR>
 nmap <leader><leader>u :UndotreeToggle<CR>
 " Files (runs $FZF_DEFAULT_COMMAND if defined)
 nmap <leader><leader>f :Files<CR>
+nmap <leader><leader>z :FZF %:p:h<CR>
 " (Toggle Go Metalinter nmap) <leader><leader><leader>g :GoMetaLinter<CR>
 nnoremap <C-p> :GFiles<CR>
-nnoremap <C-_> :call NERDComment(0,"toggle")<CR>
-vnoremap <C-_> :call NERDComment(0,"toggle")<CR>
+nmap <C-_> <Plug>NERDCommenterToggle
+vmap <C-_> <Plug>NERDCommenterToggle
 nmap <F6> :NERDTreeToggle<CR>
 nnoremap <leader>1 :bnext<CR>
 nnoremap <leader>2 :bprevious<CR>
@@ -282,9 +283,9 @@ nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
 " Search workspace symbols.
 nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
 " Do default action for next item.
-nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
+nnoremap <silent><nowait> <space>n  :<C-u>CocNext<CR>
 " Do default action for previous item.
-nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
+nnoremap <silent><nowait> <space>N  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
